@@ -1,0 +1,14 @@
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.AssemblyInfoInputs.cache
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.AssemblyInfo.cs
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.csproj.CoreCompileInputs.cache
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\bin\Debug\net9.0\DataOfStudents.exe
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\bin\Debug\net9.0\DataOfStudents.deps.json
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\bin\Debug\net9.0\DataOfStudents.runtimeconfig.json
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\bin\Debug\net9.0\DataOfStudents.dll
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\bin\Debug\net9.0\DataOfStudents.pdb
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.dll
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\refint\DataOfStudents.dll
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.pdb
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.genruntimeconfig.cache
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\ref\DataOfStudents.dll
