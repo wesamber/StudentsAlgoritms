@@ -12,3 +12,4 @@ C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\refin
 C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.pdb
 C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.genruntimeconfig.cache
 C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\ref\DataOfStudents.dll
+C:\Users\Wesam\source\repos\DataOfStudents\DataOfStudents\obj\Debug\net9.0\DataOfStudents.sourcelink.json

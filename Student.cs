@@ -10,8 +10,8 @@ namespace DataOfStudents
     public class Student
     {
         public int StudentNumber { get; set; }
-        public required string FullName { get; set; }
-        public required string Governorate { get; set; }
+        public string? FullName { get; set; }
+        public string? Governorate { get; set; }
         public double MarkQuiz1 { get; set; }
         public double MarkQuiz2 { get; set; }
         public double Outcome { get => (MarkQuiz1 + MarkQuiz2) / 2; }

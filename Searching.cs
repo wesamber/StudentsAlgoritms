@@ -9,14 +9,14 @@ namespace DataOfStudents
     public static class Searching<T> where T : ILinkedList
     {
         // فعل جينيريك للبحث عن علامة ضمن لائحة
-        public static List<Student>? SearchByMark(double mark , Node? current)
+        public static List<Student>? SearchByMark(double mark, Node? current)
         {
             List<Student>? result = new List<Student>();
 
-            if(current == null )
+            if (current == null)
                 return result;
 
-            if(current.Data.MarkQuiz1 == mark || current.Data.MarkQuiz2 == mark)
+            if (current.Data.MarkQuiz1 == mark || current.Data.MarkQuiz2 == mark)
             {
                 // لا يهم اذا كانت العلامة هي الاولى ام الثانية
                 result.Add(current.Data);
@@ -30,21 +30,18 @@ namespace DataOfStudents
 
         // ارجاع الطلاب الذين حاصلين على اكثر من علامة معينة
         // الطلاب الذين محصلتهم اكثر من 85 ولكن التخصيص عندد الاستدعاء بال main 
-        public static List<Student>? StudentMoreTheMark(double outcome, Node? current)
+        public static List<Student> StudentMoreTheMark(double outcome, Node? current)
         {
-            List<Student>? result = new List<Student>();
-
+            var result = new List<Student>();
             if (current == null)
                 return result;
 
-            if (current.Data.MarkQuiz1 > outcome)
-            {
+            if (current.Data.Outcome > outcome)
                 result.Add(current.Data);
-            }
 
-            result.AddRange(SearchByMark(outcome, current.Next));
-
+            result.AddRange(StudentMoreTheMark(outcome, current.Next));
             return result;
         }
+
     }
 }

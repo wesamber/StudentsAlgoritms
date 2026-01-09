@@ -17,7 +17,7 @@ namespace DataOfStudents
         // باللائحة الخطية العادية حيكون  ال prev ديما null لهيك حنفترض انو مالو موجود 
         public void AddFirst(Student std)
         {
-            Node newNode = new Node(std); 
+            Node newNode = new Node(std);
             newNode.Next = Head;
             Head = newNode;
             cnt++;
@@ -43,19 +43,20 @@ namespace DataOfStudents
 
         public void DeleteByNumber(int number)
         {
-            if(Head == null)
+            if (Head == null)
                 return;
-            Node current = Head;
-            if (Head.Next.Data.StudentNumber == number)
+
+            if (Head.Data.StudentNumber == number)
             {
-                Head = current.Next;
+                Head = Head.Next;
                 cnt--;
                 return;
             }
 
+            Node current = Head;
             while (current.Next != null)
             {
-                if(current.Next.Data.StudentNumber == number)
+                if (current.Next.Data.StudentNumber == number)
                 {
                     current.Next = current.Next.Next;
                     cnt--;
@@ -65,6 +66,7 @@ namespace DataOfStudents
             }
         }
 
+
         public void Print()
         {
             if (Head == null)
@@ -72,12 +74,14 @@ namespace DataOfStudents
                 Console.WriteLine("Must input a student.");
                 return;
             }
-                Node current = Head;
-            while(current.Next != null)
+
+            Node current = Head;
+            while (current != null)
             {
-                current.Data.ToString();
+                Console.WriteLine(current.Data.ToString());
                 current = current.Next;
             }
         }
+
     }
 }

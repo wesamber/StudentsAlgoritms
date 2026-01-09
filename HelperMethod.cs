@@ -27,29 +27,6 @@ namespace DataOfStudents
             return sLower;
         }
 
-        // فعل حتى اتحقق من نوع التقدير يلي دخلو المستخدم للطالب 
-        public static Estimate? ChooseEstimate(string s)
-        {
-            s = ToLower(s);
-            switch (s)
-            {
-                case "failed":
-                    return Estimate.Failed;
-
-                case "good":
-                    return Estimate.Good;
-
-                case "verygood":
-                    return Estimate.VeryGood;
-
-                case "excellent":
-                    return Estimate.Excellent;
-                
-                    default :
-                return null;
-            }
-
-        }
 
         public static int CompareStrings(string s1, string s2)
         {
