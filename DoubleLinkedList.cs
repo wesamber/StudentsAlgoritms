@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataOfStudents
 {
-    public class DoubleLinkedList
+    public class DoubleLinkedList : ILinkedList
     {
-        public Node? Head {  get; set; }
+        public Node? Head { get; set; }
         private int cnt = 0; // مشان اعرف كم طالب عندي 
         public int Count { get => cnt; }
 
@@ -31,7 +31,7 @@ namespace DataOfStudents
         public void AddLast(Student std)
         {
             Node newNode = new Node(std);
-            if (Head == null )
+            if (Head == null)
             {
                 Head = newNode;
                 cnt++;
@@ -45,6 +45,52 @@ namespace DataOfStudents
             newNode.Prev = Current;
             Current.Next = newNode;
             cnt++;
+        }
+
+        public void Print()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("Must input a student.");
+                return;
+            }
+
+            Node current = Head;
+            while (current != null)
+            {
+                Console.WriteLine(current.Data.ToString());
+                current = current.Next;
+            }
+        }
+
+    // الطلب الاضافي 
+        public void DeleteByNumber(int number)
+        {
+            if (Head == null)
+                return;
+            Node? current = Head;
+
+            while (current != null && current.Data.StudentNumber != number)
+            {
+                current = current.Next;
+            }
+            if (current == null)
+                return;
+
+            if (current == Head)
+            {
+                Head = Head.Next;
+                if (Head != null)
+                    Head.Prev = null;
+            }
+            else
+            {
+                if (current.Prev != null)
+                    current.Prev.Next = current.Next;
+                if (current.Next != null)
+                    current.Next.Prev = current.Prev;
+            }
+            cnt--;
         }
     }
 }
