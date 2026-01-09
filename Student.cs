@@ -32,7 +32,7 @@ namespace DataOfStudents
         {
             // استخدمت ال strringbuilder لانو اسرع بعمليات الاضافة عالنص 
             StringBuilder sb = new StringBuilder();
-            sb.Append($"====== Student Info =====");
+            sb.AppendLine($"====== Student Info =====");
             sb.AppendLine($"Number of student: {StudentNumber}");
             sb.AppendLine($"Full Name : {FullName}");
             sb.AppendLine($"Governorate : {Governorate}");
